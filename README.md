@@ -8,8 +8,7 @@ To build this project you will need [npm](https://www.npmjs.com/), [Bower](https
 ```
 npm install --global gulp-cli
 npm install --save-dev
-bower install
-gulp
+npm run build
 ```
 
 All dependencies will be downloaded and a `dist/` folder will be created with the file for the production site.
