@@ -1,0 +1,19 @@
+{
+    "name": "personal-website",
+    "version": "1.0.0",
+    "description": "Andre's personal website",
+    "main": "index.html",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+        "animate.css": "3.5.1",
+        "bootstrap": "3.3.6",
+        "font-awesome": "5.12.1",
+        "parallax.js": "1.4.2",
+        "jquery-ui": "1.11.4",
+        "smooth-scroll.js": "9.1.1"
+    },
+    "devDependencies": {}
+}

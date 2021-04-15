@@ -1,0 +1,25 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Andre's personal website",
+  "private": true,
+  "author": "Andre L. Maravilha",
+  "scripts": {
+    "start": "npm run build",
+    "clean": "gulp clean",
+    "build": "bower install && gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.12",
+    "del": "^6.0.0",
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30"
+  }
+}

@@ -1,0 +1,384 @@
+/* **************************************************************************
+ * Google fonts
+ * ************************************************************************** */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,300,700');
+
+
+
+/* **************************************************************************
+ * Pre-loader
+ * ************************************************************************** */
+
+.preloader {
+    background: #FFF;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.preloader .status {
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.preloader .status h4 {
+    color: #222;
+    margin-top: 30px;
+}
+
+
+/* **************************************************************************
+ * General
+ * ************************************************************************** */
+
+body {
+    font-family: "Raleway";
+    background-color: #fafafa;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    color: #333;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 30px 1px 1px 1px;
+    padding: 1px 1px 1px 1px;
+}
+
+
+/* **************************************************************************
+ * Navigation bar
+ * ************************************************************************** */
+
+.navbar {
+    background: none;
+    border-radius: 0;
+    border: 0;
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: #FFF !important;
+}
+
+.navbar-custom .navbar-brand {
+    font: 'Raleway', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #FFF;
+}
+
+.navbar-custom .nav li a {
+    background: none;
+    outline: 0;
+    color: #FFF;
+}
+
+.navbar-custom .nav li a:hover, 
+.navbar-custom .nav li a:focus {
+    background: none;
+    outline: 0;
+    color: #EF4836;
+}
+
+.navbar-custom .navbar-nav > li.active {
+    border-bottom: 2px solid #FFF;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #FFF;
+}
+
+.navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+    color: #FFF;
+    font-size: 12px;
+}
+
+.navbar-color,
+.custom-collapse {
+    background: #FFF;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+    padding: 0;
+}
+
+.navbar-color .navbar-brand,
+.custom-collapse .navbar-brand,
+.navbar-color .navbar-nav > li > a,
+.navbar-color .navbar-nav .dropdown-menu > li > a,
+.custom-collapse .navbar-nav > li > a,
+.custom-collapse .navbar-nav .dropdown-menu > li > a {
+    color: #222;
+}
+
+.navbar-color .navbar-nav > li.active {
+    border-bottom: 3px solid #222;
+}
+
+.custom-collapse .navbar-nav {
+    text-align: left;
+}
+
+.custom-collapse .navbar-nav > li.active {
+    border: 0;
+}
+
+.navbar-color .navbar-toggle .icon-bar,
+.custom-collapse .navbar-toggle .icon-bar {
+    background: #222;
+}
+
+
+/* **************************************************************************
+ * Sections (general)
+ * ************************************************************************** */
+
+section {
+    padding: 60px 0px 0px 0px;
+    color: #2f2f2f;
+}
+
+section h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 25px;
+}
+
+section .desc .title {
+    color: #34495e;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+section .desc .subtitle {
+    color: #2f2f2f;
+}
+
+section .desc .more {
+    color: #95a5a6;
+    padding-top: 5px;
+}
+
+section .desc i {
+    color: #2f2f2f;
+}
+
+section .desc .row {
+    margin-bottom: 30px;
+}
+
+
+/* **************************************************************************
+ * Home section
+ * ************************************************************************** */
+
+#home {
+    background: none;
+    margin-top: 0px;
+    padding-top: 100px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#home h1 {
+    font-size: 60px;
+    color: #FFF;
+}
+
+#home h3 {
+    font-size: 20px;
+    color: #FFF;
+}
+
+@media screen and (min-width: 992px) {
+    #home {
+        padding-top: 140px;
+    }
+
+    #home h1 {
+        font-size: 75px;
+    }
+}
+
+
+
+/* **************************************************************************
+ * About section
+ * ************************************************************************** */
+
+#about {
+    background: #34495e;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #f2f2f2;
+} 
+
+#about h5, p, i {
+    color: #f2f2f2;
+}
+
+#about i.fa {
+    padding-right: 8px;
+}
+
+#about a, a:hover, a:focus, a:before, a:after {
+    color: #f2f2f2;
+}
+
+
+/* **************************************************************************
+ * Skills section
+ * ************************************************************************** */
+
+#skills .row .row {
+    margin-bottom: 0px;
+}
+
+
+/* **************************************************************************
+ * Publications section
+ * ************************************************************************** */
+
+#publications .desc .more {
+    padding-bottom: 5px;
+}
+
+#publications a, a:focus, a:before, a:after {
+    color: #EF4836;
+}
+
+#publications a:hover {
+    color: #2f2f2f;
+}
+
+#publications p.note {
+    padding-bottom: 20px;
+}
+
+
+/* **************************************************************************
+ * Contact section
+ * ************************************************************************** */
+
+#contact {
+    background: #2f2f2f;
+    color: #f2f2f2;
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+
+#contact h5 {
+    color: #f2f2f2;
+}
+
+#contact p {
+    color: #f2f2f2;
+    padding-bottom: 15px;
+}
+
+#contact i {
+    padding-right: 8px;
+    color: #f2f2f2;
+}
+
+#contact a, a:focus, a:before, a:after {
+    color: #f2f2f2;
+}
+
+#contact a:hover {
+    color: #EF4836;
+}
+
+#contact a:hover i {
+    background: none;
+    outline: 0;
+    color: #EF4836;
+}
+
+
+/* **************************************************************************
+ * Footer
+ * ************************************************************************** */
+
+footer {
+    background: #222222;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+footer p {
+    color: #f2f2f2;
+}
+
+@media screen and (min-width: 992px) {
+    footer {
+        text-align: right;
+    }
+}
