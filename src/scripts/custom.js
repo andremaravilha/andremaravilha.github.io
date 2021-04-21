@@ -1,8 +1,27 @@
 
 $(function() {
 
+    // Internationalization (i18n)
+    $.i18n().load({
+        'en': 'i18n/en.json',
+        'pt-BR': 'i18n/pt-BR.json'
+    }).done(function() {
+
+        // Load browser's default language
+        $('body').i18n();
+
+        // Pre-loader
+        $('.preloader').delay(350).fadeOut('slow');
+    });
+
+    $('.lang-switch').on('click', function(e) {
+        e.preventDefault();
+        $.i18n().locale = $(this).data('locale');
+        $('body').i18n();
+    });
+
     // Pre-loader
-    $('.preloader').delay(350).fadeOut('slow');
+    //$('.preloader').delay(350).fadeOut('slow');
 
     // Home section (size)
     var height = $(window).height();

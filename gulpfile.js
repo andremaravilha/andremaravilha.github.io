@@ -47,9 +47,14 @@ function docs() {
             .pipe(gulp.dest('./dist/docs/'));
 }
 
+function i18n() {
+    return gulp.src('./src/i18n/**/*')
+            .pipe(gulp.dest('./dist/i18n/'));
+}
+
 // Composed tasks
 const fonts = gulp.parallel(boostrapFonts, fontawesomeFonts);
-const build = gulp.parallel(minify, fonts, images, docs);
+const build = gulp.parallel(minify, fonts, images, docs, i18n);
 
 // Exports tasks
 exports.clean = clean;

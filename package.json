@@ -13,6 +13,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@wikimedia/jquery.i18n": "^1.0.7",
     "bower": "^1.8.12",
     "del": "^6.0.0",
     "gh-pages": "^3.1.0",

@@ -1,0 +1,94 @@
+{
+  "@metadata": {
+    "authors": [
+      "Andre L. Maravilha"
+    ],
+    "last-updated": "2020-04-20",
+    "locale": "en"
+  },
+
+  "app-home-title": "Hello, I'm Andre",
+  "app-home-menu": "Home",
+
+  "app-about-title": "ABOUT",
+  "app-about-menu": "About",
+  "app-about-text": "I have experience in mathematical modeling of optimization problems and design of optimization algorithms, such as heuristics, metaheuristics, and matheuristics. I also have experience in software development with a focus on web applications. B.Sc. in Information Systems from Universidade Federal dos Vales do Jequitinhonha e Mucuri, M.Sc. and D.Sc. in Electrical Engineering from Universidade Federal de Minas Gerais. Currently, my research focuses on the design of mathematical formulations and heuristics methods for mixed integer programming problems. I am interested in subjects as operations research, combinatorial optimization, heuristics and metaheuristics, and computational intelligence. I have knowledge of C/C++, Java SE/EE, JavaScript, Python, R and MATLAB. I'm passionate about computer programming, operations research, new technologies, books, Rock'n'Roll, and meeting new people!",
+  
+  "app-education-title": "EDUCATION",
+  "app-education-menu": "Education",
+
+  "app-education-bsc-title": "B.Sc. in Information Systems",
+  "app-education-bsc-university": "Federal University of the Mucuri and Jequitinhonha Valleys",
+  "app-education-bsc-address": "Diamantina, Brazil",
+  "app-education-bsc-date": "Aug 2007 - Dec 2011",
+  "app-education-bsc-details-1": "Bachelor's Thesis: Multiobjective approach for vehicle routing problem with delivery and optional pickup (in Portuguese).",
+  "app-education-bsc-details-2": "Advisor: Prof. Alessandro Vivas, D.Sc.",
+  "app-education-bsc-details-3": "Co-Advisor: Prof. Luciana P. Assis, D.Sc.",
+  "app-education-bsc-details-4": "GPA: 8.78 / 10",
+
+  "app-education-msc-title": "M.Sc. in Electrical Engineering",
+  "app-education-msc-university": "Federal University of Minas Gerais",
+  "app-education-msc-address": "Belo Horizonte, Brazil",
+  "app-education-msc-date": "Mar 2012 - Feb 2014",
+  "app-education-msc-details-1": "Master's Thesis: An algorithm based on differential evolution for solving combinatorial optimization problems (in Portuguese).",
+  "app-education-msc-details-2": "Advisor: Prof. Felipe Campelo, Ph.D.",
+  "app-education-msc-details-3": "Co-Advisor: Prof. Jaime A. Ramírez, D.Sc.",
+  "app-education-msc-details-4": "GPA: 8.93 / 10",
+
+  "app-education-dsc-title": "D.Sc. in Electrical Engineering",
+  "app-education-dsc-university": "Federal University of Minas Gerais",
+  "app-education-dsc-address": "Belo Horizonte, Brazil",
+  "app-education-dsc-date": "Aug 2014 - Oct 2018",
+  "app-education-dsc-details-1": "Doctoral Dissertation: Scheduling maneuvers for the restoration of electric power distribution networks.",
+  "app-education-dsc-details-2": "Advisor: Prof. Alessandro Vivas, D.Sc.",
+  "app-education-dsc-details-3": "Co-Advisor: Prof. Eduardo G. Carrano, D.Sc.",
+  "app-education-dsc-details-4": "GPA: 8.91 / 10",
+  
+  "app-work-title": "WORK",
+  "app-work-menu": "Work",
+
+  "app-work-1-title": "Lecturer",
+  "app-work-1-organization": "Federal Center for Technological Education of Minas Gerais",
+  "app-work-1-address": "Divinópolis, Brazil",
+  "app-work-1-date": "Jul 2018 - current",
+  "app-work-1-details": "Lecturer on the subjects Introduction to computing programming, Web development, and Database systems in Computer Engineering and Computer Technician courses. Deputy Head of Dept. of Informatics, Management, and Design (2021-2022). Deputy Coordinator of the Technical Course in Informatics (2019-2020).",
+
+  "app-work-2-title": "Researcher",
+  "app-work-2-organization": "Operations Research and Complex Systems Lab., UFMG",
+  "app-work-2-address": "Belo Horizonte, Brazil",
+  "app-work-2-date": "Jun 2016 - May 2018",
+  "app-work-2-details": "I was responsible for developing mathematical formulations and algorithms for solving the problem of scheduling and routing teams for maneuvering switches on power restoration of electric networks. This work was part of an R&D project for developing an integrated fault management system for Ceron Energisa, a Brazilian company of generation, distribution, and transmission of electricity.",
+
+  "app-work-3-title": "Software Developer (intern)",
+  "app-work-3-organization": "ENACOM - Handcrafted Technologies",
+  "app-work-3-address": "Belo Horizonte, Brazil",
+  "app-work-3-date": "Aug 2011 - Apr 2012",
+  "app-work-3-details": "I developed matrix formulations for tree traversal algorithms and graph drawing, which extended to linear constraints in optimization problems. I was also responsible for creating a web application using Java EE and MATLAB to present a network reconfiguration tool developed by ENACOM team.",
+  
+  "app-skills-title": "SKILLS",
+  "app-skills-menu": "Skills",
+  "app-skills-programming": "Programming Languages",
+  "app-skills-programming-value": "C/C++ (advanced), Java (advanced), JavaScript (advanced), Python (intermediate), MATLAB (intermediate), R (basic)",
+  "app-skills-optimization": "Optimization Tools",
+  "app-skills-optimization-value": "Gurobi (advanced), CPLEX (advanced), SCIP (intermediate), FICO Xpress (basic)",
+  "app-skills-technologies": "Technologies",
+  "app-skills-technologies-value": "Node.js, Express.js, Java EE, Spring Framework, RESTful Web Services, Git, Linux",
+  "app-skills-languages": "Languages",
+  "app-skills-languages-value": "Portuguese, English",
+  
+  "app-publications-title": "SELECT PUBLICATIONS",
+  "app-publications-menu": "Publications",
+  "app-publications-lattes-text-before": "For a complete and updated list of my publications, please visit my ",
+  "app-publications-lattes-link": "CV Lattes",
+  "app-publications-lattes-text-after": " (in Portuguese)",
+  
+  "app-contact-title": "CONTACT",
+  "app-contact-menu": "Contact",
+  "app-contact-email": "Email",
+  "app-contact-address": "Address",
+  "app-contact-address-value": "Belo Horizonte, Minas Gerais, Brazil",
+  "app-contact-social": "Social Links",
+
+  "app-footer-copyrights": "All Rights Reserved"
+
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="" dir="ltr">
     
     <head>
         <meta charset="utf-8" />
@@ -55,13 +55,15 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a data-scroll href="#home">Home</a></li>
-                        <li><a data-scroll href="#about">About</a></li>
-                        <li><a data-scroll href="#education">Education</a></li>
-                        <li><a data-scroll href="#work">Work</a></li>
-                        <li><a data-scroll href="#skills">Skills</a></li>
-                        <li><a data-scroll href="#publications">Publications</a></li>
-                        <li><a data-scroll href="#contact">Contact</a></li>
+                        <li class="active"><a data-i18n="app-home-menu" data-scroll href="#home">Home</a></li>
+                        <li><a data-i18n="app-about-menu" data-scroll href="#about">About</a></li>
+                        <li><a data-i18n="app-education-menu" data-scroll href="#education">Education</a></li>
+                        <li><a data-i18n="app-work-menu" data-scroll href="#work">Work</a></li>
+                        <li><a data-i18n="app-skills-menu" data-scroll href="#skills">Skills</a></li>
+                        <li><a data-i18n="app-publications-menu" data-scroll href="#publications">Publications</a></li>
+                        <li><a data-i18n="app-contact-menu" data-scroll href="#contact">Contact</a></li>
+                        <li><a data-scroll href="#" class="lang-switch" data-locale="en"><img src="images/flag-en.png"></a></li>
+                        <li><a data-scroll href="#" class="lang-switch" data-locale="pt-BR"><img src="images/flag-pt-BR.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +74,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1>Hello, I'm André</h1>
+                        <h1 data-i18n="app-home-title">Hello, I'm André</h1>
                         <div class="img-responsive">
                             <img src="images/andre.jpg" alt="My photo" class="img-circle" style="width: 200px;" />
                         </div>
@@ -93,20 +95,23 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-1 col-md-2">
-                        <h5>ABOUT</h5>
+                        <h5 data-i18n="app-about-title">ABOUT</h5>
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <p class="text-justify">
-                            B.Sc. in Information Systems from Universidade Federal dos Vales do 
-                            Jequitinhonha e Mucuri, M.Sc. and D.Sc. in Electrical Engineering from 
-                            Universidade Federal de Minas Gerais. Currently, my research focuses 
-                            on the design of mathematical formulations and heuristics methods for 
-                            mixed integer programming problems. I'm interested in subjects as 
-                            operations research, combinatorial optimization, heuristics and 
-                            metaheuristics, and computational intelligence. I have knowledge of 
-                            C/C++, Java SE/EE, JavaScript, Python, R and MATLAB. I'm passionate 
-                            about computer programming, operations research, new technologies, 
-                            books, Rock'n'Roll, and meeting new people!
+                        <p class="text-justify" data-i18n="app-about-text">
+                            I have experience in mathematical modeling of optimization problems and 
+                            design of optimization algorithms, such as heuristics, metaheuristics, 
+                            and matheuristics. I also have experience in software development with 
+                            a focus on web applications. B.Sc. in Information Systems from Universidade 
+                            Federal dos Vales do Jequitinhonha e Mucuri, M.Sc. and D.Sc. in Electrical 
+                            Engineering from Universidade Federal de Minas Gerais. Currently, my 
+                            research focuses on the design of mathematical formulations and heuristics 
+                            methods for mixed integer programming problems. I am interested in subjects 
+                            as operations research, combinatorial optimization, heuristics and 
+                            metaheuristics, and computational intelligence. I have knowledge of C/C++, 
+                            Java SE/EE, JavaScript, Python, R and MATLAB. I'm passionate about computer 
+                            programming, operations research, new technologies, books, Rock'n'Roll, and 
+                            meeting new people!
                         </p>
                         <p class="text-right">
                             <br />
@@ -126,79 +131,79 @@
             <div class="container desc">
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-1 col-md-2">
-                        <h5>EDUCATION</h5>
+                        <h5 data-i18n="app-education-title">EDUCATION</h5>
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <p class="title">D.Sc. in Electrical Engineering</p>
+                        <p class="title" data-i18n="app-education-dsc-title">D.Sc. in Electrical Engineering</p>
                         <p class="subtitle">
                             <i class="fas fa-university fa-fw"></i>
-                            Federal University of Minas Gerais
+                            <span data-i18n="app-education-dsc-university">Federal University of Minas Gerais</span>
                         </p>
                         <p class="subtitle">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Belo Horizonte, Brazil
+                            <span data-i18n="app-education-dsc-address">Belo Horizonte, Brazil</span>
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <i class="far fa-calendar-alt fa-fw"></i>
-                        Aug 2014 - Oct 2018
+                        <span data-i18n="app-education-dsc-date">Aug 2014 - Oct 2018</span>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
                         <p class="more">
-                            Doctoral Dissertation: Scheduling maneuvers for the restoration of electric power distribution networks.<br />
-                            Advisor: Prof. Felipe Campelo, Ph.D.<br />
-                            Co-Advisor: Prof. Eduardo G. Carrano, D.Sc.<br />
-                            GPA: 8.91 / 10
+                            <span data-i18n="app-education-dsc-details-1">Doctoral Dissertation: Scheduling maneuvers for the restoration of electric power distribution networks.</span><br />
+                            <span data-i18n="app-education-dsc-details-2">Advisor: Prof. Felipe Campelo, Ph.D.</span><br />
+                            <span data-i18n="app-education-dsc-details-3">Co-Advisor: Prof. Eduardo G. Carrano, D.Sc.</span><br />
+                            <span data-i18n="app-education-dsc-details-4">GPA: 8.91 / 10</span>
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="title">M.Sc. in Electrical Engineering</p>
+                        <p class="title" data-i18n="app-education-msc-title">M.Sc. in Electrical Engineering</p>
                         <p class="subtitle">
                             <i class="fas fa-university fa-fw"></i>
-                            Federal University of Minas Gerais
+                            <span data-i18n="app-education-msc-university">Federal University of Minas Gerais</span>
                         </p>
                         <p class="subtitle">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Belo Horizonte, Brazil
+                            <span data-i18n="app-education-msc-address">Belo Horizonte, Brazil</span>
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <i class="far fa-calendar-alt fa-fw"></i>
-                        Mar 2012 - Feb 2014
+                        <span data-i18n="app-education-msc-date">Mar 2012 - Feb 2014</span>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
                         <p class="more">
-                            Master's Thesis: An algorithm based on differential evolution for solving combinatorial optimization problems (in Portuguese).<br />
-                            Advisor: Prof. Felipe Campelo, Ph.D.<br />
-                            Co-Advisor: Prof. Jaime A. Ramírez, D.Sc.<br />
-                            GPA: 8.93 / 10
+                            <span data-i18n="app-education-msc-details-1">Master's Thesis: An algorithm based on differential evolution for solving combinatorial optimization problems (in Portuguese).</span><br />
+                            <span data-i18n="app-education-msc-details-2">Advisor: Prof. Felipe Campelo, Ph.D.</span><br />
+                            <span data-i18n="app-education-msc-details-3">Co-Advisor: Prof. Jaime A. Ramírez, D.Sc.</span><br />
+                            <span data-i18n="app-education-msc-details-4">GPA: 8.93 / 10</span>
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="title">BSc. in Information Systems</p>
+                        <p class="title" data-i18n="app-education-bsc-title">BSc. in Information Systems</p>
                         <p class="subtitle">
                             <i class="fas fa-university fa-fw"></i>
-                            Federal University of the Mucuri and Jequitinhonha Valleys
+                            <span data-i18n="app-education-bsc-university">Federal University of the Mucuri and Jequitinhonha Valleys</span>
                         </p>
                         <p class="subtitle">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Diamantina, Brazil
+                            <span data-i18n="app-education-bsc-address">Diamantina, Brazil</span>
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <i class="far fa-calendar-alt fa-fw"></i>
-                        Aug 2007 - Dec 2011
+                        <span data-i18n="app-education-bsc-date">Aug 2007 - Dec 2011</span>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
                         <p class="more">
-                            Bachelor's Thesis: Multiobjective approach for vehicle routing problem with delivery and optional pickup (in Portuguese).<br />
-                            Advisor: Prof. Alessandro Vivas, D.Sc.<br />
-                            Co-Advisor: Prof. Luciana P. Assis, D.Sc.<br />
-                            GPA: 8.78 / 10
+                            <span data-i18n="app-education-bsc-details-1">Bachelor's Thesis: Multiobjective approach for vehicle routing problem with delivery and optional pickup (in Portuguese).</span><br />
+                            <span data-i18n="app-education-bsc-details-2">Advisor: Prof. Alessandro Vivas, D.Sc.</span><br />
+                            <span data-i18n="app-education-bsc-details-3">Co-Advisor: Prof. Luciana P. Assis, D.Sc.</span><br />
+                            <span data-i18n="app-education-bsc-details-4">GPA: 8.78 / 10</span>
                         </p>
                     </div>
                 </div>
@@ -211,25 +216,25 @@
             <div class="container desc">
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-1 col-md-2">
-                        <h5>WORK</h5>
+                        <h5 data-i18n="app-work-title">WORK</h5>
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <p class="title">Lecturer</p>
+                        <p class="title" data-i18n="app-work-1-title">Lecturer</p>
                         <p class="subtitle">
                             <i class="fas fa-university fa-fw"></i>
-                            Federal Center for Technological Education of Minas Gerais
+                            <span data-i18n="app-work-1-organization">Federal Center for Technological Education of Minas Gerais</span>
                         </p>
                         <p class="subtitle">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Divinópolis, Brazil
+                            <span data-i18n="app-work-1-address">Divinópolis, Brazil</span>
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <i class="far fa-calendar-alt fa-fw"></i>
-                        Jul 2018 - current
+                        <span data-i18n="app-work-1-date">Jul 2018 - current</span>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="more">
+                        <p class="more" data-i18n="app-work-1-details">
                             Lecturer on the subjects Introduction to computing programming, Web 
                             development, and Database systems in Computer Engineering and Computer 
                             Technician courses. Deputy Head of Dept. of Informatics, Management, 
@@ -240,22 +245,22 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="title">Researcher</p>
+                        <p class="title" data-i18n="app-work-2-title">Researcher</p>
                         <p class="subtitle">
                             <i class="fas fa-university fa-fw"></i>
-                            Operations Research and Complex Systems Lab., UFMG
+                            <span data-i18n="app-work-2-organization">Operations Research and Complex Systems Lab., UFMG</span>
                         </p>
                         <p class="subtitle">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Belo Horizonte, Brazil
+                            <span data-i18n="app-work-2-address">Belo Horizonte, Brazil</span>
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <i class="far fa-calendar-alt fa-fw"></i>
-                        Jun 2016 - May 2018
+                        <span data-i18n="app-work-2-date">Jun 2016 - May 2018</span>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="more">
+                        <p class="more" data-i18n="app-work-2-details">
                             I was responsible for developing mathematical formulations and 
                             algorithms for solving the problem of scheduling and routing teams for 
                             maneuvering switches on power restoration of electric networks. This 
@@ -267,22 +272,22 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="title">Software Developer (intern)</p>
+                        <p class="title" data-i18n="app-work-3-title">Software Developer (intern)</p>
                         <p class="subtitle">
                             <i class="fas fa-university fa-fw"></i>
-                            ENACOM - Handcrafted Technologies
+                            <span data-i18n="app-work-3-organization">ENACOM - Handcrafted Technologies</span>
                         </p>
                         <p class="subtitle">
                             <i class="fas fa-map-marker-alt fa-fw"></i>
-                            Belo Horizonte, Brazil
+                            <span data-i18n="app-work-3-address">Belo Horizonte, Brazil</span>
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <i class="far fa-calendar-alt fa-fw"></i>
-                        Aug 2011 - Apr 2012
+                        <span data-i18n="app-work-3-date">Aug 2011 - Apr 2012</span>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="more">
+                        <p class="more" data-i18n="app-work-3-details">
                             I developed matrix formulations for tree traversal algorithms and 
                             graph drawing, which extended to linear constraints in optimization 
                             problems. I was also responsible for creating a web application using 
@@ -300,11 +305,11 @@
             <div class="container desc">
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-1 col-md-2">
-                        <h5>SKILLS</h5>
+                        <h5 data-i18n="app-skills-title">SKILLS</h5>
                     </div>
                     <div class="col-xs-12 col-md-6">
-                        <p class="title">Programming Languages</p>
-                        <p class="subtitle">
+                        <p class="title" data-i18n="app-skills-programming">Programming Languages</p>
+                        <p class="subtitle" data-i18n="app-skills-programming-value">
                             C/C++ (advanced), Java (advanced), JavaScript (advanced), 
                             Python (intermediate), MATLAB (intermediate), R (basic)
                         </p>
@@ -312,8 +317,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="title">Optimization Tools</p>
-                        <p class="subtitle">
+                        <p class="title" data-i18n="app-skills-optimization">Optimization Tools</p>
+                        <p class="subtitle" data-i18n="app-skills-optimization-value">
                             Gurobi (advanced), CPLEX (advanced), SCIP (intermediate), 
                             FICO Xpress (basic)
                         </p>
@@ -321,16 +326,16 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="title">Technologies</p>
-                        <p class="subtitle">
+                        <p class="title" data-i18n="app-skills-technologies">Technologies</p>
+                        <p class="subtitle" data-i18n="app-skills-technologies-value">
                             Node.js, Express.js, Java EE, Spring Framework, RESTful Web Services, Git, Linux
                         </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-md-offset-3">
-                        <p class="title">Languages</p>
-                        <p class="subtitle">
+                        <p class="title" data-i18n="app-skills-languages">Languages</p>
+                        <p class="subtitle" data-i18n="app-skills-languages-value">
                             Portuguese, English
                         </p>
                     </div>
@@ -344,12 +349,13 @@
             <div class="container desc">
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-1 col-md-2">
-                        <h5>SELECT PUBLICATIONS</h5>
+                        <h5 data-i18n="app-publications-title">SELECT PUBLICATIONS</h5>
                     </div>
                     <div class="col-xs-12 col-md-3 col-md-push-6">
                         <p class="subtitle note">
-                            For a complete and updated list of my publications, please visit my 
-                            <a href="http://lattes.cnpq.br/9685472895445408" target="_blank" title="CV Lattes">CV Lattes</a> (in Portuguese).
+                            <span data-i18n="app-publications-lattes-text-before">For a complete and updated list of my publications, please visit my</span> 
+                            <a href="http://lattes.cnpq.br/9685472895445408" target="_blank" title="CV Lattes"><span data-i18n="app-publications-lattes-link">CV Lattes</span></a> 
+                            <span data-i18n="app-publications-lattes-text-after">(in Portuguese)</span>.
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-6 col-md-pull-3">
@@ -384,8 +390,8 @@
                             Fillipe Goulart, André L. Maravilha, Eduardo G. Carrano, Felipe Campelo
                         </p>
                         <p class="more">
-                            International Journal of Electrical Power \&amp; Energy Systems, v. 101, 2018<br />
-                            p. 339-355
+                            International Journal of Electrical Power &amp; Energy Systems, v. 101, 2018<br />
+                            p. 339-355<br />
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
@@ -399,8 +405,7 @@
                         </p>
                         <p class="more">
                             BRICS Congress on Computational Intelligence (BRICS-CCI), 2013<br />
-                            Ipojuca, Brazil<br />
-                            p. 60-66
+                            p. 60-66<br />
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
@@ -414,25 +419,25 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-offset-1 col-md-2">
-                        <h5>CONTACT</h5>
+                        <h5 data-i18n="app-contact-title">CONTACT</h5>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <p>
                             <i class="fas fa-envelope"></i>
-                            Email<br />
+                            <span data-i18n="app-contact-email">Email</span><br />
                             <a href="#" title="Andre's CEFET email">andre.maravilha [at] outlook [dot] com</a><br />
                         </p>
                         <p>
                             <i class="fas fa-map-marker-alt"></i>
-                            Address<br />
+                            <span data-i18n="app-contact-address">Address</span><br />
                             <a href="https://goo.gl/maps/9DQLyB4t1iM2" target="_blank" title="Belo Horizonte">
-                                Belo Horizonte, Minas Gerais, Brazil
+                                <span data-i18n="app-contact-address-value">Belo Horizonte, Minas Gerais, Brazil</span>
                             </a>
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-3">
                         <p>
-                            Social Links
+                            <span data-i18n="app-contact-social">Social Links</span>
                             <br />
                             <a href="https://linkedin.com/in/andremaravilha" target="_blank" title="LinkedIn"><i class="fab fa-2x fa-linkedin"></i></a>
                             <a href="https://github.com/andremaravilha" target="_blank" title="GitHub"><i class="fab fa-2x fa-github-square"></i></a>
@@ -447,7 +452,7 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <p>© 2021 André L. Maravilha, All Rights Reserved.</p>
+                <p>© 2021 André L. Maravilha, <span data-i18n="app-footer-copyrights">All Rights Reserved</span>.</p>
             </div>
         </footer>
         
@@ -457,6 +462,13 @@
         <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="../bower_components/parallax.js/parallax.min.js"></script>
         <script src="../bower_components/smooth-scroll.js/dist/js/smooth-scroll.min.js"></script>
+        <script src="../node_modules/@wikimedia/jquery.i18n/src/jquery.i18n.js"></script>
+        <script src="../node_modules/@wikimedia/jquery.i18n/src/jquery.i18n.messagestore.js"></script>
+        <script src="../node_modules/@wikimedia/jquery.i18n/src/jquery.i18n.fallbacks.js"></script>
+        <script src="../node_modules/@wikimedia/jquery.i18n/src/jquery.i18n.language.js"></script>
+        <script src="../node_modules/@wikimedia/jquery.i18n/src/jquery.i18n.parser.js"></script>
+        <script src="../node_modules/@wikimedia/jquery.i18n/src/jquery.i18n.emitter.js"></script>
+        <script src="../node_modules/@wikimedia/jquery.i18n/src/jquery.i18n.emitter.bidi.js"></script>
         <script src="scripts/custom.js"></script>
         <!-- endbuild -->
         
