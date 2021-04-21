@@ -1,0 +1,94 @@
+{
+  "@metadata": {
+    "authors": [
+      "Andre L. Maravilha"
+    ],
+    "last-updated": "2020-04-20",
+    "locale": "pt-BR"
+  },
+
+  "app-home-title": "Olá, eu sou o André",
+  "app-home-menu": "Início",
+  
+  "app-about-title": "SOBRE",
+  "app-about-menu": "Sobre",
+  "app-about-text": "Possui experiência em modelagem matemática e projeto de algoritmos para problemas de otimização. Tem experiência, também, no desenvolvimento de software com foco em aplicações Web. Bacharel em Sistemas de Informação pela Universidade Federal dos Vales do Jequitinhonha e Mucuri (UFVJM), mestrado e doutorado em Engenharia Elétrica pela Universidade Federal de Minas Gerais (UFMG). Desenvolve pesquisas envolvendo formulações matemáticas e projeto de algoritmos para otimização de problemas de programação inteira mista. Seus principais interesses são: pesquisa operacional, otimização combinatória, heuristicas, meta-heurísticas e inteligência computacional. Possui conhecimento de programação em C/C++, Java SE/EE, JavaScript, Python, R e MATLAB. Apaixonado por programação de computadores, pesquisa operacional, novas tecnologias, livros, Rock'n'Roll, e conhecer novas pessoas!",
+  
+  "app-education-title": "EDUCAÇÃO",
+  "app-education-menu": "Educação",
+
+  "app-education-bsc-title": "Bacharelado em Sistemas de Informação",
+  "app-education-bsc-university": "Universidade Federal dos Vales do Jequitinhonha e Mucuri",
+  "app-education-bsc-address": "Diamantina, Brasil",
+  "app-education-bsc-date": "Ago 2007 - Dez 2011",
+  "app-education-bsc-details-1": "Monografia: Abordagem multiobjetivo para o problema de roteamento de veículos com serviços de entrega e coleta opcional.",
+  "app-education-bsc-details-2": "Orientador: Prof. Alessandro Vivas, D.Sc.",
+  "app-education-bsc-details-3": "Coorientadora: Prof. Luciana P. Assis, D.Sc.",
+  "app-education-bsc-details-4": "GPA: 8.78 / 10",
+
+  "app-education-msc-title": "Mestrado em Engenharia Elétrica",
+  "app-education-msc-university": "Universidade Federal de Minas Gerais",
+  "app-education-msc-address": "Belo Horizonte, Brasil",
+  "app-education-msc-date": "Mar 2012 - Fev 2014",
+  "app-education-msc-details-1": "Dissertação: Algoritmo baseado em evolução diferencial para solução de problemas de otimização combinatória.",
+  "app-education-msc-details-2": "Orientador: Prof. Felipe Campelo, Ph.D.",
+  "app-education-msc-details-3": "Coorientador: Prof. Jaime A. Ramírez, D.Sc.",
+  "app-education-msc-details-4": "GPA: 8.93 / 10",
+
+  "app-education-dsc-title": "Doutorado em Engenharia Elétrica",
+  "app-education-dsc-university": "Universidade Federal de Minas Gerais",
+  "app-education-dsc-address": "Belo Horizonte, Brasil",
+  "app-education-dsc-date": "Ago 2014 - Out 2018",
+  "app-education-dsc-details-1": "Tese: Programação de manobras para restauração de redes de distribuição de energia elétrica (em inglês).",
+  "app-education-dsc-details-2": "Orientador: Prof. Alessandro Vivas, D.Sc.",
+  "app-education-dsc-details-3": "Coorientador: Prof. Eduardo G. Carrano, D.Sc.",
+  "app-education-dsc-details-4": "GPA: 8.91 / 10",
+  
+  "app-work-title": "EXPERIÊNCIA",
+  "app-work-menu": "Experiência",
+
+  "app-work-1-title": "Professor",
+  "app-work-1-organization": "Centro Federal de Educação Tecnológica de Minas Gerais",
+  "app-work-1-address": "Divinópolis, Brasil",
+  "app-work-1-date": "Jul 2018 - atual",
+  "app-work-1-details": "Professor das disciplinas de Programação de Computadores, Programação para Web e Bancos de Dados nos cursos de Engenharia de Computação e Técnicos em Informática e Informática para Internet. Subchefe do Departamento de Informática, Gestão e Design (2021-2022). Subcoordenador dos Cursos Técnicos em Informática e Informática para Internet (2019-2020).",
+
+  "app-work-2-title": "Pesquisador",
+  "app-work-2-organization": "Operations Research and Complex Systems Lab., UFMG",
+  "app-work-2-address": "Belo Horizonte, Brasil",
+  "app-work-2-date": "Jun 2016 - Mai 2018",
+  "app-work-2-details": "Desenvolvimento de formulações matemáticas e algoritmos para resolução do problema de programação e roteamento de equipes para manobra de chaves na restauração de redes de distribuição de energia elétrica. Trabalho realizado como parte de um projeto de P&D para desenvolvimento de um sistema de gestão integrado de falhas para a Ceron Energisa.",
+
+  "app-work-3-title": "Programador (estágio)",
+  "app-work-3-organization": "ENACOM - Handcrafted Technologies",
+  "app-work-3-address": "Belo Horizonte, Brasil",
+  "app-work-3-date": "Ago 2011 - Abr 2012",
+  "app-work-3-details": "Projeto de formulações matriciais para algoritmos de caminhamento em árvores e desenho de grafos, os quais se estendem a restrições lineares de problemas de otimização. Implementação de aplicações web utilizando Java EE e MATLAB para visualização da ferramenta de reconfiguração de redes desenvolvida pela equipe da ENACOM.",
+  
+  "app-skills-title": "HABILIDADES",
+  "app-skills-menu": "Habilidades",
+  "app-skills-programming": "Linguagens de Programação",
+  "app-skills-programming-value": "C/C++ (avançado), Java (avançado), JavaScript (avançado), Python (intermediário), MATLAB (intermediário), R (básico)",
+  "app-skills-optimization": "Otimização",
+  "app-skills-optimization-value": "Gurobi (avançado), CPLEX (avançado), SCIP (intermediário), FICO Xpress (básico)",
+  "app-skills-technologies": "Tecnologias",
+  "app-skills-technologies-value": "Node.js, Express.js, Java EE, Spring Framework, RESTful Web Services, Git, Linux",
+  "app-skills-languages": "Idiomas",
+  "app-skills-languages-value": "Português, Inglês",
+  
+  "app-publications-title": "PUBLICAÇÕES SELECIONADAS",
+  "app-publications-menu": "Publicações",
+  "app-publications-lattes-text-before": "Para uma lista completa e atualizada, visite meu ",
+  "app-publications-lattes-link": "CV Lattes",
+  "app-publications-lattes-text-after": " ",
+  
+  "app-contact-title": "CONTATO",
+  "app-contact-menu": "Contato",
+  "app-contact-email": "E-mail",
+  "app-contact-address": "Endereço",
+  "app-contact-address-value": "Belo Horizonte, Minas Gerais, Brasil",
+  "app-contact-social": "Redes Sociais",
+
+  "app-footer-copyrights": "Todos os direitos reservados"
+
+}
