@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="{{ site.author }}" />
+    <meta name="description" content="{{ site.description }}" />
+    
+    <link rel="icon" href="{{ '/assets/favicons/favicon.png' | relative_url }}" />
+
+    <link rel="stylesheet" href="{{ 'bootstrap/dist/css/bootstrap.min.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ 'bootstrap-icons/font/bootstrap-icons.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ '@fortawesome/fontawesome-free/css/all.min.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ 'academicons/css/academicons.min.css' | node_module_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+    <title>André L. Maravilha {% if page.title %} :: {{page.title}} {% endif %}</title>
+</head>
+
+<body>
+
+    {{ content }}
+
+    <!-- JavaScript files -->
+    <script src="{{ 'jquery/dist/jquery.min.js' | node_module_url }}"></script>
+    <script src="{{ 'bootstrap/dist/js/bootstrap.bundle.min.js' | node_module_url }}"></script>
+    <script src="{{ 'jquery-parallax.js/parallax.min.js' | node_module_url }}"></script>
+    <script src="{{ 'sweet-scroll/sweet-scroll.min.js' | node_module_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+
+</html>
