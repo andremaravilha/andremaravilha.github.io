@@ -29,7 +29,7 @@ email: "andre.maravilha@outlook.com"
 description: "André L. Maravilha's personal website"
 
 baseurl: ""
-url: "./"
+url: "https://andremaravilha.github.io/"
 
 lattes: "http://lattes.cnpq.br/9685472895445408"
 orcid: "https://orcid.org/0000-0002-5869-3052"
@@ -52,7 +52,6 @@ sass:
   sass_dir: assets/stylesheets
 
 plugins:
-  - jekyll-feed
   - jekyll-node-module
 
 node_modules:
