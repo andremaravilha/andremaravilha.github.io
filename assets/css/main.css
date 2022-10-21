@@ -85,6 +85,16 @@ body {
     margin-top: -100px;
 }
 
+.contact-social a {
+    color: rgb(var(--gray));
+    text-decoration: none;
+}
+
+.contact-social a:hover {
+    color: rgb(var(--text-dark));
+}
+
+
 
 /* **************************************************************************
  * Footer

@@ -15,10 +15,7 @@ permalink: /
         <div class="collapse navbar-collapse" id="navbar-content">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home" data-scroll>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about" data-scroll>About</a>
+                    <a class="nav-link active" aria-current="page" href="#about" data-scroll>About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#work" data-scroll>Work</a>
@@ -65,10 +62,11 @@ permalink: /
                     <a href="{{ site.twitter }}" target="_blank" class="mx-2"><i class="bi bi-twitter"></i></a>
                 </h5>
                 <p class="text-justify">
-                    Hi! B.Sc. in Information Systems from Universidade Federal dos Vales do Jequitinhonha e Mucuri 
-                    (<a href="https://www.ufvjm.edu.br/" target="_blank">UFVJM</a>), M.Sc. and D.Sc. in Electrical 
-                    Engineering from Universidade Federal de Minas Gerais (<a href="https://www.ufmg.br/" target="_blank">UFMG</a>). 
-                    Currently, I am an Assistant Professor at Centro Federal de Educação Tecnológica de Minas Gerais 
+                    Hi! I have received the B.Sc. degree in Information Systems from Universidade Federal dos Vales 
+                    do Jequitinhonha e Mucuri (<a href="https://www.ufvjm.edu.br/" target="_blank">UFVJM</a>), M.Sc. 
+                    and D.Sc. in Electrical Engineering from Universidade Federal de Minas Gerais 
+                    (<a href="https://www.ufmg.br/" target="_blank">UFMG</a>). Currently, I am as an Assistant Professor 
+                    at Centro Federal de Educação Tecnológica de Minas Gerais 
                     (<a href="https://www.cefetmg.br/" target="_blank">CEFET-MG</a>, campus Divinópolis). I love 
                     programming and I have a passion for operations research, new technologies, books and rock'n'roll!
                 </p>
@@ -78,40 +76,148 @@ permalink: /
         <!-- Work experience -->
         <section id="work" class="col-12 mt-4">
             <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h3 class="text-dark mb-0">Work Experience</h3>
+                <h4 class="text-dark mb-0">Work Experience</h4>
                 <hr class="mt-0">
+                {% assign entries = site.data.work %}
+                {% for entry in entries %}
+                <div class="row mb-3">
+                    <div class="col-auto col-md-1 text-center"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="col col-md-9">
+                        <h5 class="mb-0">{{ entry.position }}</h5>
+                        <p class="small text-muted mb-0">{{ entry.organization }}</p>
+                    </div>
+                    <div class="col-12 col-md-2 text-end">
+                        {{ entry.start }} - {{ entry.end }}
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </section>
 
         <!-- Education -->
         <section id="education" class="col-12 mt-4">
             <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h3 class="text-dark mb-0">Education</h3>
+                <h4 class="text-dark mb-0">Education</h4>
                 <hr class="mt-0">
+                {% assign entries = site.data.education %}
+                {% for entry in entries %}
+                <div class="row mb-3">
+                    <div class="col-auto col-md-1 text-center"><i class="bi bi-mortarboard-fill"></i></div>
+                    <div class="col col-md-9">
+                        <h5 class="mb-0">{{ entry.degree }}</h5>
+                        <p class="small text-muted mb-0">{{ entry.institution }}</p>
+                        {% if entry.field %}
+                        <p class="small text-muted mb-0">Field of study: {{ entry.field }}</p>
+                        {% endif %}
+                        <p class="small text-muted mb-0">Advisors: {{ entry.advisor }} and {{ entry.coadvisor }} (coadvisor)</p>
+                    </div>
+                    <div class="col-12 col-md-2 text-end">
+                        {{ entry.start }} - {{ entry.end }}
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </section>
 
         <!-- Teaching -->
         <section id="teaching" class="col-12 mt-4">
             <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h3 class="text-dark mb-0">Teaching</h3>
+                <h4 class="text-dark mb-0">Teaching Activity</h4>
                 <hr class="mt-0">
+                {% assign entries = site.data.teaching %}
+                {% for entry in entries %}
+                <div class="row mb-3">
+                    <div class="col-auto col-md-1 text-center">
+                        <i class="bi bi-easel2-fill"></i>
+                    </div>
+                    <div class="col col-md-9">
+                        <h5 class="mb-0">
+                            {{ entry.subject }}
+                        </h5>
+                        <p class="small text-muted mb-0">{{ entry.level }}</p>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </section>
 
         <!-- Projects and research -->
         <section id="projects" class="col-12 mt-4">
             <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h3 class="text-dark mb-0">Projects and Research</h3>
+                <h4 class="text-dark mb-0">Research and Extension Projects</h4>
                 <hr class="mt-0">
+                {% assign entries = site.data.projects %}
+                {% for entry in entries %}
+                <div class="row mb-3">
+                    <div class="col-auto col-md-1 text-center">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div class="col col-md-9">
+                        <h5 class="mb-0">
+                            {{ entry.title }}
+                            {% if entry.url %}
+                            <a class="ms-2 small" href="{{ entry.url }}" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                            {% endif %}
+                        </h5>
+                        <p class="small text-muted mb-0">{{ entry.type }}</p>
+                    </div>
+                    <div class="col-12 col-md-2 text-end">
+                        {{ entry.start }} - {{ entry.end }}
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </section>
 
         <!-- Contact -->
         <section id="contact" class="col-12 mt-4">
             <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h3 class="text-dark mb-0">Contact</h3>
+                <h4 class="text-dark mb-0">Contact Me</h4>
                 <hr class="mt-0">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+
+                        <div class="row mb-3">
+                            <div class="col-auto col-md-2 text-center">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="col col-md-10">
+                                <h5 class="mb-0">Address</h5>
+                                <p class="text-muted mb-0">
+                                    Divinópolis, MG - Brazil
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-auto col-md-2 text-center">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="col col-md-10">
+                                <h5 class="mb-0">E-mail</h5>
+                                <p class="text-muted mb-0">andre.maravilha [at] cefetmg [dot] br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-auto col-md-2 text-center">
+                                <i class="bi bi-share-fill"></i>
+                            </div>
+                            <div class="col col-md-10">
+                                <h5 class="mb-0">Social Networks</h5>
+                                <h5 class="mb-0 mt-2 contact-social">
+                                    <a href="{{ site.lattes }}" target="_blank" class="me-3"><i class="ai ai-lattes"></i></a>
+                                    <a href="{{ site.orcid }}" target="_blank" class="me-3"><i class="ai ai-orcid"></i></a>
+                                    <a href="{{ site.linkedin }}" target="_blank" class="me-3"><i class="bi bi-linkedin"></i></a>
+                                    <a href="{{ site.github }}" target="_blank" class="me-3"><i class="bi bi-github"></i></a>
+                                    <a href="{{ site.instagram }}" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+                                    <a href="{{ site.twitter }}" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+                                </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
 
