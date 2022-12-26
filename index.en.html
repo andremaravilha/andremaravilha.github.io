@@ -2,6 +2,7 @@
 layout: default
 title: 
 permalink: /
+lang: en
 ---
 
 
@@ -32,6 +33,13 @@ permalink: /
                 <li class="nav-item">
                     <a class="nav-link" href="#contact" data-scroll>Contact</a>
                 </li>
+                <li class="nav-item">
+                    <div class="d-none d-lg-inline-block mx-lg-2 text-muted vr"><span class="invisible">.</span></div>
+                    <i class="text-muted bi bi-translate d-inline-block me-0 pe-0"></i>
+                    {% for lang in site.languages %}
+                    <a class="nav-link d-inline-block ms-1 ms-lg-0 me-0 pe-0" {% static_href %}href="{% if lang == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ lang }}{{page.url}}{% endif %}"{% endstatic_href %}>{{ site.data.languages[lang] }}</a> 
+                    {% endfor %}
+                </li>
             </ul>
         </div>
     </div>
@@ -49,9 +57,9 @@ permalink: /
 
         <!-- About me -->
         <section id="about" class="col-12">
-            <div class="mx-0 px-0 mx-md-5 px-md-5">
+            <div class="mx-0 px-0 mx-lg-5 px-lg-5">
                 <img class="profile-picture d-block mx-auto rounded-circle shadow-sm mb-3" src="{{ '/assets/images/me.jpg' | relative_url }}">
-                <h1 class="profile-name text-center">André L. Maravillha</h1>
+                <h1 class="profile-name text-center">André L. Maravilha</h1>
                 <h5 class="profile-title text-center">Brazilian, [Computer] Scientist, and Professor</h5>
                 <h5 class="profile-social text-center mt-4 mb-5">
                     <a href="{{ site.lattes }}" target="_blank" class="mx-2"><i class="ai ai-lattes"></i></a>
@@ -63,11 +71,11 @@ permalink: /
                 </h5>
                 <p class="text-justify">
                     Hi! I have received the B.Sc. degree in Information Systems from Universidade Federal dos Vales 
-                    do Jequitinhonha e Mucuri (<a href="https://www.ufvjm.edu.br/" target="_blank">UFVJM</a>), M.Sc. 
+                    do Jequitinhonha e Mucuri (<a href="https://www.ufvjm.edu.br/" target="_blank">UFVJM</a>, Brazil), M.Sc. 
                     and D.Sc. in Electrical Engineering from Universidade Federal de Minas Gerais 
-                    (<a href="https://www.ufmg.br/" target="_blank">UFMG</a>). Currently, I am as an Assistant Professor 
+                    (<a href="https://www.ufmg.br/" target="_blank">UFMG</a>, Brazil). Currently, I am as an Assistant Professor 
                     at Centro Federal de Educação Tecnológica de Minas Gerais 
-                    (<a href="https://www.cefetmg.br/" target="_blank">CEFET-MG</a>, campus Divinópolis). I love 
+                    (<a href="https://www.cefetmg.br/" target="_blank">CEFET-MG</a>, Brazil). I love 
                     programming and I have a passion for operations research, new technologies, books and rock'n'roll!
                 </p>
             </div>
@@ -75,19 +83,29 @@ permalink: /
 
         <!-- Work experience -->
         <section id="work" class="col-12 mt-4">
-            <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h4 class="text-dark mb-0">Work Experience</h4>
+            <div class="mx-0 px-0 mx-lg-5 px-lg-5">
+                <h4 class="text-dark mb-0">
+                    <i class="bi bi-briefcase-fill me-2 d-lg-none"></i> Work Experience
+                </h4>
                 <hr class="mt-0">
                 {% assign entries = site.data.work %}
                 {% for entry in entries %}
-                <div class="row mb-3">
-                    <div class="col-auto col-md-1 text-center"><i class="bi bi-briefcase-fill"></i></div>
-                    <div class="col col-md-9">
-                        <h5 class="mb-0">{{ entry.position }}</h5>
-                        <p class="small text-muted mb-0">{{ entry.organization }}</p>
+                <div class="row mb-0">
+                    <div class="d-none d-lg-block col-lg-1 text-center">
+                        <i class="bi bi-briefcase-fill"></i>
                     </div>
-                    <div class="col-12 col-md-2 text-end">
+                    <div class="col-12 col-lg-9">
+                        <h5 class="mb-0">{{ entry.position }}</h5>
+                    </div>
+                    <div class="col-12 col-lg-2 text-start text-lg-end">
                         {{ entry.start }} - {{ entry.end }}
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col col-lg-9 offset-lg-1">
+                        <p class="small text-muted mb-0">
+                            {{ entry.organization }}
+                        </p>
                     </div>
                 </div>
                 {% endfor %}
@@ -96,23 +114,30 @@ permalink: /
 
         <!-- Education -->
         <section id="education" class="col-12 mt-4">
-            <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h4 class="text-dark mb-0">Education</h4>
+            <div class="mx-0 px-0 mx-lg-5 px-lg-5">
+                <h4 class="text-dark mb-0">
+                    <i class="bi bi-mortarboard-fill me-2 d-lg-none"></i> Education
+                </h4>
                 <hr class="mt-0">
                 {% assign entries = site.data.education %}
                 {% for entry in entries %}
-                <div class="row mb-3">
-                    <div class="col-auto col-md-1 text-center"><i class="bi bi-mortarboard-fill"></i></div>
-                    <div class="col col-md-9">
+                <div class="row mb-0">
+                    <div class="d-none d-lg-block col-lg-1 text-center">
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div class="col-12 col-lg-9">
                         <h5 class="mb-0">{{ entry.degree }}</h5>
+                    </div>
+                    <div class="col-12 col-lg-2 text-start text-lg-end">
+                        {{ entry.start }} - {{ entry.end }}
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col col-lg-9 offset-lg-1">
                         <p class="small text-muted mb-0">{{ entry.institution }}</p>
                         {% if entry.field %}
                         <p class="small text-muted mb-0">Field of study: {{ entry.field }}</p>
                         {% endif %}
-                        <p class="small text-muted mb-0">Advisors: {{ entry.advisor }} and {{ entry.coadvisor }} (coadvisor)</p>
-                    </div>
-                    <div class="col-12 col-md-2 text-end">
-                        {{ entry.start }} - {{ entry.end }}
                     </div>
                 </div>
                 {% endfor %}
@@ -121,48 +146,66 @@ permalink: /
 
         <!-- Teaching -->
         <section id="teaching" class="col-12 mt-4">
-            <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h4 class="text-dark mb-0">Teaching Activity</h4>
+            <div class="mx-0 px-0 mx-lg-5 px-lg-5">
+                <h4 class="text-dark mb-0">
+                    <i class="bi bi-chat-text-fill me-2 d-lg-none"></i> Teaching Activity
+                </h4>
                 <hr class="mt-0">
                 {% assign entries = site.data.teaching %}
                 {% for entry in entries %}
-                <div class="row mb-3">
-                    <div class="col-auto col-md-1 text-center">
-                        <i class="bi bi-easel2-fill"></i>
+                <div class="row mb-0">
+                    <div class="d-none d-lg-block col-lg-1 text-center">
+                        <i class="bi bi-chat-text-fill"></i>
                     </div>
-                    <div class="col col-md-9">
-                        <h5 class="mb-0">
-                            {{ entry.subject }}
-                        </h5>
-                        <p class="small text-muted mb-0">{{ entry.level }}</p>
+                    <div class="col-12 col-lg-9">
+                        <h5 class="mb-0">{{ entry.subject }}</h5>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col col-lg-9 offset-lg-1">
+                        <p class="small text-muted mb-0">{{ entry.course }}</p>
+                        {% if entry.description %}
+                        <p class="small text-muted mb-0">{{ entry.description }}</p>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
             </div>
         </section>
 
-        <!-- Projects and research -->
+        <!-- Projects -->
         <section id="projects" class="col-12 mt-4">
-            <div class="mx-0 px-0 mx-md-5 px-md-5">
-                <h4 class="text-dark mb-0">Research and Extension Projects</h4>
+            <div class="mx-0 px-0 mx-lg-5 px-lg-5">
+                <h4 class="text-dark mb-0">
+                    <i class="bi bi-puzzle-fill me-2 d-lg-none"></i> 
+                    <span class="d-lg-none">Projects</span>
+                    <span class="d-none d-lg-inline">Research and Extension Projects</span>
+                </h4>
                 <hr class="mt-0">
                 {% assign entries = site.data.projects %}
                 {% for entry in entries %}
-                <div class="row mb-3">
-                    <div class="col-auto col-md-1 text-center">
-                        <i class="bi bi-people-fill"></i>
+                <div class="row mb-0">
+                    <div class="d-none d-lg-block col-lg-1 text-center">
+                        <i class="bi bi-puzzle-fill"></i>
                     </div>
-                    <div class="col col-md-9">
+                    <div class="col-12 col-lg-9">
                         <h5 class="mb-0">
-                            {{ entry.title }}
+                            {{ entry.title }} 
                             {% if entry.url %}
                             <a class="ms-2 small" href="{{ entry.url }}" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
                             {% endif %}
                         </h5>
-                        <p class="small text-muted mb-0">{{ entry.type }}</p>
                     </div>
-                    <div class="col-12 col-md-2 text-end">
+                    <div class="col-12 col-lg-2 text-start text-lg-end">
                         {{ entry.start }} - {{ entry.end }}
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col col-lg-9 offset-lg-1">
+                        <p class="small text-muted mb-0">{{ entry.type }}</p>
+                        {% if entry.description %}
+                        <p class="small text-muted mb-0">{{ entry.description }}</p>
+                        {% endif %}
                     </div>
                 </div>
                 {% endfor %}
@@ -171,39 +214,18 @@ permalink: /
 
         <!-- Contact -->
         <section id="contact" class="col-12 mt-4">
-            <div class="mx-0 px-0 mx-md-5 px-md-5">
+            <div class="mx-0 px-0 mx-lg-5 px-lg-5">
                 <h4 class="text-dark mb-0">Contact Me</h4>
                 <hr class="mt-0">
                 <div class="row">
-                    <div class="col-12 col-md-6">
 
-                        <div class="row mb-3">
-                            <div class="col-auto col-md-2 text-center">
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </div>
-                            <div class="col col-md-10">
-                                <h5 class="mb-0">Address</h5>
-                                <p class="text-muted mb-0">
-                                    Divinópolis, MG - Brazil
-                                </p>
-                            </div>
-                        </div>
+                    <div class="col-12 col-lg-5 order-lg-2 offset-lg-1">
                         
                         <div class="row mb-3">
-                            <div class="col-auto col-md-2 text-center">
-                                <i class="bi bi-envelope-fill"></i>
-                            </div>
-                            <div class="col col-md-10">
-                                <h5 class="mb-0">E-mail</h5>
-                                <p class="text-muted mb-0">andre.maravilha [at] cefetmg [dot] br</p>
-                            </div>
-                        </div>
-                        
-                        <div class="row mb-3">
-                            <div class="col-auto col-md-2 text-center">
+                            <div class="col-auto col-lg-2 text-center">
                                 <i class="bi bi-share-fill"></i>
                             </div>
-                            <div class="col col-md-10">
+                            <div class="col col-lg-10">
                                 <h5 class="mb-0">Social Networks</h5>
                                 <h5 class="mb-0 mt-2 contact-social">
                                     <a href="{{ site.lattes }}" target="_blank" class="me-3"><i class="ai ai-lattes"></i></a>
@@ -213,6 +235,36 @@ permalink: /
                                     <a href="{{ site.instagram }}" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
                                     <a href="{{ site.twitter }}" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
                                 </h5>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mt-1">
+                            <div class="col-auto col-lg-2 text-center">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="col col-lg-10">
+                                <h5 class="mb-0">E-mail</h5>
+                                <p class="text-muted mb-0">andre.maravilha [at] cefetmg [dot] br</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 order-lg-1">
+
+                        <div class="row mb-3">
+                            <div class="col-auto col-lg-2 text-center">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="col col-lg-10">
+                                <h5 class="mb-0">Address</h5>
+                                <p class="text-muted mb-0">
+                                    Centro Federal de Educação Tecnológica de Minas Gerais<br>
+                                    Room 605, Dept. Informatics, Management and Design<br>
+                                    Rua Alvares de Azevedo 400<br>
+                                    35503-822 - Divinópolis, MG, Brazil<br>
+                                    Phone: +55 37 3229-1172
+                                </p>
                             </div>
                         </div>
 

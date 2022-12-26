@@ -23,10 +23,13 @@
 
 title: "André L. Maravilha"
 
-author: "André L. Maravilha"
-email: "andre.maravilha@outlook.com"
+author:
+  name: "André L. Maravilha"
+  email: "andre.maravilha@outlook.com"
 
-description: "André L. Maravilha's personal website"
+description: 
+  en: "André L. Maravilha's personal website"
+  pt:BR: "Página de André L. Maravilha"
 
 baseurl: ""
 url: "https://andremaravilha.github.io/"
@@ -52,8 +55,17 @@ sass:
   sass_dir: assets/stylesheets
 
 plugins:
+  - jekyll-polyglot
   - jekyll-node-module
 
+# jekyll-polyglot settings
+languages: ["pt_BR", "en"]
+default_lang: "pt_BR"
+exclude_from_localization: ["assets"]
+lang_from_path: true
+parallel_localization: false
+
+# jekyll-node-modules settings
 node_modules:
   assets:
     js: assets/js
