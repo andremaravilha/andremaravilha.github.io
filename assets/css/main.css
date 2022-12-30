@@ -149,4 +149,5 @@ body {
 .navbar-transparent {
     animation-name: toTransparentBackground;
     background-color: rgba(var(--light), 0);
+    text-shadow: 1px 1px 2px rgb(var(--text-light-dark));
 }
